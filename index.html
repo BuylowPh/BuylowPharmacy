@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buylow Pharmacy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: whitesmoke;
+      font-family: 'Open Sans', sans-serif;
+      color: black;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      padding: 10px 20px;
+      background-color: lightblue;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header .h1 {
+      font-family: 'Montserrat', sans-serif;
+      padding-left: 60px;
+    }
+
+    .header .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .header .contact-info .fb-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url('facebook.png') no-repeat center center / cover;
+    }
+
+    .main {
+      padding: 20px;
+    }
+
+    .section {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .product {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      flex-basis: calc(25% - 20px);
+      max-width: calc(25% - 20px);
+      color: black;
+      text-align: center;
+      margin: 10px;
+      transition: transform 0.3s ease-in-out;
+      position: relative;
+    }
+
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .product .status {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #995353;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .product a {
+      display: block;
+      margin-top: 10px;
+      color: black;
+      text-decoration: none;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .product a:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .footer {
+      background-color: #282828;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .footer .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    .footer .footer-content .contact-item {
+      margin: 5px 0;
+    }
+
+    .footer .footer-content .slogan {
+      font-size: 1.2em; /* Adjusted font size for emphasis */
+      font-weight: bold;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none; /* Initially hidden */
+      background-color: #995353;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 25px;
+      cursor: pointer;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+      transition: opacity 0.3s ease-in-out;
+      z-index: 1000; /* Ensures it stays above other content */
+    }
+    
+    .back-to-top:hover {
+      background-color: #703737;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .header {
+        flex-direction: column;
+      }
+
+      .header .h1 {
+        padding-left: 0;
+      }
+
+      .header .contact-info {
+        flex-direction: column;
+        margin-top: -15px;
+        gap: 10px;
+      }
+
+      .footer .footer-content {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .products .product {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="h1">
+      <h1>BuyLow Pharmacy</h1>
+      <div class="contact-info">
+      For Orders, contact us at Viber: 
+      <br> 0917 579 2049 / 0992 700 7728 
+      <br> <a href="https://www.facebook.com/BuylowPH" target="_blank" style="color: black; text-decoration: underline;">Facebook Page: BuylowPh</a>
+    </div>
+    </div>
+    
+  </header>
+
+  <div class="main">
+    <div class="section products">
+      <!-- Repeat the product div for each product (25-30 products) -->
+      <div class="product">
+        <img src="alaxan.png" alt="Product">
+        <div class="status">In Stock</div>
+        <h2>Alaxan FR</h2>
+        <p>ibuprofen + paracetamol| Faster relief of mild to moderately severe pain</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 2</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 3</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 4</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 5</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 6</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 7</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 8</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 9</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 10</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 11</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 12</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 13</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 14</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 15</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 16</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 17</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 18</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 19</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 20</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 21</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 22</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 23</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 24</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 25</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 26</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 27</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 28</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 29</h2>
+        <p>Product description goes here.</p>
+      </div>
+      <div class="product">
+        <img src="product-placeholder.jpg" alt="Product">
+        <div class="status">Out of Stock</div>
+        <h2>Product 30</h2>
+        <p>Product description goes here.</p>
+      </div>
+
+    </div>
+  </div>
+
+ <footer class="footer">
+    <div class="footer-content">
+      <div class="contact-item slogan">"Mura't Mabisang Gamot"</div>
+      <div class="contact-item">Landline: 075-523-9534</div>
+      <div class="contact-item">We accept both cash and gcash payments</div>
+      <div class="contact-item">
+        <a href="https://www.google.com/maps/place/REM+CITIMED+PHARMA+DISTRIBUTOR+OFFICE/@16.0643882,120.3368546,21z/data=!4m6!3m5!1s0x3391675aff0f7905:0xcef4ab4757a55f68!8m2!3d16.0644656!4d120.3367375!16s%2Fg%2F11ff0vhmk2?entry=ttu" target="_blank" style="color: white; text-decoration: underline;">Location: Rem Bldg. Catacdang, Bonuan Gueset, Dagupan City</a>
+      </div>
+    </div>
+  </footer>
+
+  </footer>
+</body>
+</html>
+    </div>
+  </footer>
+
+ <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+ <script>
+    // Function to scroll back to the top
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Function to toggle the visibility of the back-to-top button
+    function toggleBackToTopButton() {
+      const button = document.querySelector('.back-to-top');
+      if (window.scrollY > 200) {
+        button.style.display = 'block';
+      } else {
+        button.style.display = 'none';
+      }
+    }
+
+    // Add scroll event listener to toggle the button
+    window.addEventListener('scroll', toggleBackToTopButton);
+  </script>
+</body>
+</html>
