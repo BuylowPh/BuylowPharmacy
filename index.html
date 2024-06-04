@@ -15,7 +15,7 @@
 
     .header {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       text-align: center;
       padding: 10px 20px;
@@ -25,20 +25,16 @@
 
     .header .h1 {
       font-family: 'Montserrat', sans-serif;
+      text-align: center;
       padding-left: 60px;
     }
 
     .header .contact-info {
       display: flex;
+      flex-direction: column; /* Changed to column to center content vertically */
       align-items: center;
-      gap: 15px;
-    }
-
-    .header .contact-info .fb-icon {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      background: url('facebook.png') no-repeat center center / cover;
+      gap: 10px;
+      margin-top: 10px; /* Adjusted margin-top */
     }
 
     .main {
@@ -124,12 +120,12 @@
 
     .footer .footer-content {
       display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      justify-content: space-around;
+      flex-direction: column; /* Changed to column to center content */
+      align-items: center;
+      text-align: center;
+      gap: 10px;
       width: 100%;
-    }
-
+}
     .footer .footer-content .contact-item {
       margin: 5px 0;
     }
