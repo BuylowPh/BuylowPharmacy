@@ -191,15 +191,20 @@
         gap: 5px;
       }
 
-      .products .product, .more-products .product {
-        flex-basis: 100%;
-        max-width: 100%;
+       .more-products.mobile-view .product {
+        flex-basis: 100% !important;
+        max-width: 100% !important;
       }
-    
+
       .products, .more-products {
-        flex-direction: column; /* Ensures items are displayed in a single column */
-        align-items: center; /* Centers items horizontally */
+        flex-direction: column !important; /* Force single column layout */
+        align-items: center !important; /* Center items horizontally */
       }
-    }
+
+      .products .product, .more-products .product {
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+      }
+}
   </style>
 
