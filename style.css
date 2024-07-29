@@ -191,9 +191,14 @@
         gap: 5px;
       }
 
-     .products .product, .more-products .product {
+      .products .product, .more-products .product {
         flex-basis: 100%;
         max-width: 100%;
+      }
+    
+      .products, .more-products {
+        flex-direction: column; /* Ensures items are displayed in a single column */
+        align-items: center; /* Centers items horizontally */
       }
     }
   </style>
