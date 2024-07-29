@@ -11,8 +11,9 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 15px 25px;
-      margin: -10px;
+      padding: 10px 10px;
+      padding-top: 10px;
+      margin: -10px ;
       background-color: lightblue;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
@@ -20,14 +21,15 @@
     .header .h1 {
       font-family: 'Montserrat', sans-serif;
       text-align: center;
+      font-size: 1.1em;
+      margin-bottom: 15px;
     }
 
     .header .contact-info {
       display: flex;
       flex-direction: column; /* Changed to column to center content vertically */
       align-items: center;
-      gap: 10px;
-      margin-top: 10px; /* Adjusted margin-top */
+      gap: 5px;
     }
 
     .main {
@@ -41,12 +43,13 @@
 
     .section h2 {
       text-align: center;
-      font-size: 1.8em;
+      font-size: 2.0em;
       margin-bottom: 20px;
       color: #333;
     }
 
-    .products {
+   
+    .products, .more-products {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -84,6 +87,23 @@
       border-radius: 5px;
     }
 
+    .show-more {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+    
+    .show-more:hover {
+      background-color: #807979;
+    }
+
     .product a {
       display: block;
       margin-top: 10px;
@@ -104,7 +124,8 @@
       background-color: #282828;
       color: white;
       margin: -10px;
-      padding: 20px;
+      margin-top: 5px;
+      padding: 5px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -117,11 +138,11 @@
       flex-direction: column; /* Changed to column to center content */
       align-items: center;
       text-align: center;
-      gap: 10px;
+      gap: 0px;
       width: 100%;
 }
     .footer .footer-content .contact-item {
-      margin: 5px 0;
+      margin: 0px 0;
     }
 
     .footer .footer-content .slogan {
@@ -134,12 +155,12 @@
       bottom: 20px;
       right: 20px;
       display: none;
-      background-color: #995353;
+      background-color: #030303;
       color: white;
       border: none;
-      border-radius: 50%;
-      padding: 15px;
-      font-size: 25px;
+      border-radius: 30%;
+      padding: 10px;
+      font-size: 20px;
       cursor: pointer;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
       transition: opacity 0.3s ease-in-out;
@@ -147,7 +168,7 @@
     }
     
     .back-to-top:hover {
-      background-color: #703737;
+      background-color: #8d8282;
     }
 
     @media only screen and (max-width: 600px) {
@@ -176,3 +197,4 @@
       }
     }
   </style>
+
