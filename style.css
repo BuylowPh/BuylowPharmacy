@@ -191,7 +191,7 @@
         gap: 5px;
       }
 
-      .products .product {
+     .products .product, .more-products .product s{
         flex-basis: 100%;
         max-width: 100%;
       }
