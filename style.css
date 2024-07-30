@@ -183,7 +183,7 @@
     .header .contact-info {
         flex-direction: column;
         margin-top: -15px;
-        gap: 10px;
+        gap: 15px;
     }
 
     .footer .footer-content {
