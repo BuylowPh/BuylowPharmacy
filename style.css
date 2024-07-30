@@ -200,7 +200,7 @@
     .product img {
         width: 100%;
         height: auto;
-        max-height: 100px; /* Adjusted height for mobile */
+        max-height: 80px; /* Adjusted height for mobile */
         object-fit: cover;
         border-radius: 5px;
     }
@@ -216,7 +216,7 @@
         font-size: 0.8em; /* Adjusted font size */
     }
 
-    .product h3 {
+    .product h2 {
         font-size: 1em; /* Adjusted font size for title */
         margin: 10px 0 5px; /* Adjusted margins */
     }
