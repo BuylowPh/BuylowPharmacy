@@ -192,8 +192,8 @@
       }
 
       .products .product, .more-products .product {
-        flex-basis: calc(50% - 10px); /* Adjust flex-basis for two columns */
-        max-width: calc(25% - 5px); /* Adjust max-width for two columns */
+        flex-basis: calc(60% - 15px); /* Adjust flex-basis for two columns */
+        max-width: calc(30% - 7.5px); /* Adjust max-width for two columns */
       }
     }
 </style>
