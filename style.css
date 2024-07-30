@@ -196,8 +196,8 @@
     }
 
     .products .product, .more-products .product {
-        flex-basis: calc(50% - 10px); /* Double column */
-        max-width: calc(25% - 10px); /* Double column */
+        flex-basis: calc(60% - 15px); /* Double column */
+        max-width: calc(35% - 7.5px); /* Double column */
         padding: 5px; /* Reduced padding */
     }
 
