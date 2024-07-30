@@ -191,20 +191,10 @@
         gap: 5px;
       }
 
-       .more-products.mobile-view .product {
-        flex-basis: 100% !important;
-        max-width: 100% !important;
-      }
-
-      .products, .more-products {
-        flex-direction: column !important; /* Force single column layout */
-        align-items: center !important; /* Center items horizontally */
-      }
-
       .products .product, .more-products .product {
-        flex-basis: 100% !important;
-        max-width: 100% !important;
+        flex-basis: calc(50% - 10px); /* Adjust flex-basis for two columns */
+        max-width: calc(50% - 10px); /* Adjust max-width for two columns */
       }
-}
-  </style>
+    }
+</style>
 
