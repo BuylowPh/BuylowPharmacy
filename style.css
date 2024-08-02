@@ -30,6 +30,8 @@
       flex-direction: column; /* Changed to column to center content vertically */
       align-items: center;
       gap: 5px;
+      font-size: 0.8em;
+      font-weight: bold;
     }
 
     .main {
