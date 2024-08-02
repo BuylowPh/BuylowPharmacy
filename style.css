@@ -191,7 +191,10 @@
         flex-direction: column;
         gap: 5px;
     }
-
+        
+    .footer .contact-item {
+    
+    }
     .section h2 {
         font-size: 1.7em;
     }
