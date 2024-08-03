@@ -186,7 +186,7 @@
     .header .contact-info {
         flex-direction: column;
         margin-top: -15px;
-        gap: 15px;
+        gap: 5px;
     }
 
     .footer .footer-content {
