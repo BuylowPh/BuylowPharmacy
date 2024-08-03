@@ -26,11 +26,24 @@
     <div class="section">
       <h2>Para sa Operation</h2>
       <div class="products">
+        <!-- The Modal -->
+        <div id="brandModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Brands for Iopamidol</h2>
+            <p>Brand 2</p>
+            <p>Brand 3</p>
+          </div>
+        </div>
+
+        <!-- Product Structure -->
         <div class="product">
           <img src="scanlux.jpg" alt="Product">
           <div class="status">In Stock</div>
           <h2>Iopamidol</h2>
-          <p>SCANLUX</p>
+          <p>BRAND 1</p>
+          <button class="show-brands">Show Other Brands</button>
+        </div>
 
         </div>
         <div class="product">
@@ -779,7 +792,6 @@
   document.querySelectorAll('.show-more').forEach(button => {
   button.addEventListener('click', function() {
     const moreProducts = this.previousElementSibling;
-    const buttonText = this.textContent;
 
     if (moreProducts.style.display === 'none' || moreProducts.style.display === '') {
       moreProducts.style.display = 'flex';
@@ -803,6 +815,73 @@ window.addEventListener('scroll', function() {
     backToTopButton.style.display = 'none';
   }
 });
+
+// Get the modal
+var modal = document.getElementById("brandModal");
+
+// Get the button that opens the modal
+var btn = document.querySelector(".show-brands");
+
+// Get the <span> element that closes the modal
+var span = document.querySelector(".close");
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function searchFunction() {
+    const searchValue = document.getElementById('searchInput').value.toLowerCase();
+    const products = document.querySelectorAll('.product');
+
+    // Remove previous highlights
+    products.forEach(product => {
+        product.classList.remove('highlight');
+    });
+
+    let found = false;
+
+    // Click all "Show More" buttons to ensure all products are visible
+    document.querySelectorAll('.show-more').forEach(button => {
+        const moreProducts = button.previousElementSibling;
+        if (moreProducts.style.display === 'none' || moreProducts.style.display === '') {
+            button.click(); // Click to show hidden products
+        }
+    });
+
+    // Ensure the DOM updates before searching
+    setTimeout(() => {
+        // Debugging: Log all products and their display status
+        products.forEach(product => {
+            console.log('Product:', product.textContent, 'Display:', getComputedStyle(product).display);
+        });
+
+        let productFound = false;
+        products.forEach(product => {
+            if (product.textContent.toLowerCase().includes(searchValue)) {
+                product.classList.add('highlight');
+                product.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                productFound = true;
+            }
+        });
+
+        if (!productFound) {
+            alert('Item not found');
+        }
+    }, 300); // Adjust timeout if needed
+}
   </script>
 </body>
 </html>
