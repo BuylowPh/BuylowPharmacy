@@ -189,12 +189,12 @@
       background-color: #8d8282;
     }
 
-    .more-brands {
-  display: none;
-  text-align: center;
-  flex-direction: column;
-}
-
+   .more-brands {
+      display: none;
+      text-align: center;
+      flex-direction: column;
+    }
+    
     .modal {
       display: none; 
       position: fixed; 
@@ -253,8 +253,9 @@
     }
     
     .highlight {
-      background-color: lightblue; /* Highlight color */
+      background-color: yellow; /* Highlight color */
     }
+
 
     @media only screen and (max-width: 580px) {
     .header {
