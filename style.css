@@ -144,11 +144,13 @@
 }
     .footer .footer-content .contact-item {
       margin: 0px 0;
+      width: 100%;
     }
 
     .footer .footer-content .slogan {
       font-size: 1.3em;
       font-weight: bold;
+      width: 100%;
     }
 
     .back-to-top {
