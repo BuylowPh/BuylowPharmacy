@@ -255,7 +255,7 @@ body {
 }
 
 .highlight {
-  background-color: yellow; /* Highlight color */
+  background-color: lightblue; /* Highlight color */
 }
 
 @media only screen and (max-width: 580px) {
