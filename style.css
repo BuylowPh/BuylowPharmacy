@@ -269,8 +269,8 @@ body {
 
 .header .contact-info {
     flex-direction: column;
-    margin-top: -15px;
-    gap: 15px;
+    margin-top: -8.5px;
+    gap: 10px;
 }
 
 .footer .footer-content {
@@ -283,8 +283,8 @@ body {
 }
 
 .products .product, .more-products .product {
-    flex-basis: calc(70% - 15px); /* Double column */
-    max-width: calc(35% - 7.5px); /* Double column */
+    flex-basis: calc(80% - 20px); /* Double column */
+    max-width: calc(40% - 10px); /* Double column */
     padding: 5px; /* Reduced padding */
 }
 
