@@ -191,14 +191,14 @@
 
     .footer .footer-content {
         flex-direction: column;
-        gap: 5px;
+        gap: 0px;
     }
         
     .footer .contact-item {
       display: flex;
       flex-direction: column; /* Changed to column to center content vertically */
       align-items: center;
-      gap: 5px;
+      gap: -5px;
       font-size: 0.8em;
     }
     .section h2 {
