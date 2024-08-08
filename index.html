@@ -154,6 +154,17 @@
            <p>BRAND 1</p>
           <button class="show-brands">Show Other Brands</button>
         </div>
+
+         <div id="brandModalPNSS" class="modal">
+          <div class="modal-content">
+            <span class="close-pnss">&times;</span>
+            <h2>Brands for PNSS</h2>
+            <p>Brand 1</p>
+            <p>Brand 2</p>
+            <p>Brand 3</p>
+          </div>
+        </div>
+        
         <div class="product">
           <img src="d5lr.png" alt="Product">
           <div class="status">In Stock</div>
@@ -162,6 +173,18 @@
           <p>BRAND 1</p>
           <button class="show-brands">Show Other Brands</button>
         </div>
+
+         <div id="brandModalD5LR" class="modal">
+          <div class="modal-content">
+            <span class="close-d5lr">&times;</span>
+            <h2>Brands for D5LR</h2>
+            <p>Brand 1</p>
+            <p>Brand 2</p>
+            <p>Brand 3</p>
+          </div>
+        </div>
+
+        
         <div class="product">
           <img src="plrs.png" alt="Product">
           <div class="status">In Stock</div>
@@ -170,6 +193,17 @@
           <p>BRAND 1</p>
           <button class="show-brands">Show Other Brands</button>
         </div>
+
+          <div id="brandModalPLAIN" class="modal">
+          <div class="modal-content">
+            <span class="close-plain">&times;</span>
+            <h2>Brands for PLAIN LR</h2>
+            <p>Brand 1</p>
+            <p>Brand 2</p>
+            <p>Brand 3</p>
+          </div>
+        </div>
+        
         <div class="product">
           <img src="irri.png" alt="Product">
           <div class="status">In Stock</div>
@@ -177,6 +211,16 @@
           <p>ENDURE</p>
           <p>BRAND 1</p>
           <button class="show-brands">Show Other Brands</button>
+        </div>
+
+         <div id="brandModalIRRIGATION" class="modal">
+          <div class="modal-content">
+            <span class="close-irrigation">&times;</span>
+            <h2>Brands for IRRIGATION</h2>
+            <p>Brand 1</p>
+            <p>Brand 2</p>
+            <p>Brand 3</p>
+          </div>
         </div>
         <div class="product">
           <img src="mannitol.png" alt="Product">
@@ -190,6 +234,17 @@
           <h2>Sterile Water</h2>
           <p>EUROMED</p>
         </div>
+
+        <div id="brandModalD52" class="modal">
+          <div class="modal-content">
+            <span class="close-d5w">&times;</span>
+            <h2>Brands for D5 Water</h2>
+            <p>Brand 1</p>
+            <p>Brand 2</p>
+            <p>Brand 3</p>
+          </div>
+        </div>
+        
         <div class="product">
           <img src="d5w.png" alt="Product">
           <div class="status">In Stock</div>
@@ -844,20 +899,32 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Get the modal for Iopamidol
+// Get the modal 
 var modal = document.getElementById("brandModal");
-// Get the modal for Sterile Gloves
 var modalGloves = document.getElementById("brandModalGloves");
+var modalPNSS = document.getElementById("brandModalPNSS");
+var modalD5LR = document.getElementById("brandModalD5LR");
+var modalPlain = document.getElementById("brandModalPLAIN");
+var modalIrrigation = document.getElementById("brandModalIRRIGATION");    
+var modalD5W = document.getElementById("brandModalD5W");    
 
 // Get the button that opens the Iopamidol modal
 var btn = document.querySelector(".show-brands");
-// Get the button that opens the Sterile Gloves modal
 var btnGloves = document.querySelector(".show-brands-gloves");
+var btnPNSS = document.querySelector(".show-brands-PNSS");
+var btnD5LR = document.querySelector(".show-brands-D5LR");
+var btnPlain = document.querySelector(".show-brands-Plain"); 
+var btnIrrigation = document.querySelector(".show-brands-Irrigation");
+var btnD5W = document.querySelector(".show-brands-D5W");      
 
 // Get the <span> element that closes the Iopamidol modal
 var span = document.querySelector(".close");
-// Get the <span> element that closes the Sterile Gloves modal
 var spanGloves = document.querySelector(".close-gloves");
+var spanPNSS = document.querySelector(".close-pnss");
+var spanD5LR = document.querySelector(".close-d5lr");
+var spanPlain = document.querySelector(".close-plain");
+var spanIrrigation = document.querySelector(".close-irrigation");
+var spanD5W = document.querySelector(".close-d5w");
 
 // When the user clicks the button, open the Iopamidol modal
 btn.onclick = function() {
@@ -885,6 +952,16 @@ window.onclick = function(event) {
     modal.style.display = "none";
   } else if (event.target == modalGloves) {
     modalGloves.style.display = "none";
+  } else if (event.target == modalPNSS) {
+    modalPNSS.style.display = "none";
+  } else if (event.target == modalD5LR) {
+    modalD5LR.style.display = "none";
+  } else if (event.target == modalPLAIN) {
+    modalPLAIN.style.display = "none";
+  } else if (event.target == modalIRRIGATION) {
+    modalIRRIGATION.style.display = "none"; 
+  } else if (event.target == modalD5W) {
+    modalD5W.style.display = "none";  
   }
 }
     
