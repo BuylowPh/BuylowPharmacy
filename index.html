@@ -93,10 +93,10 @@
           <p>HEXACARE</p>
         </div>
 
-         <div id="brandModal" class="modal">
+         <div id="brandModalGloves" class="modal">
           <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Brands for Iopamidol</h2>
+            <span class="close-gloves">&times;</span>
+            <h2>Brands for Sterile Gloves</h2>
             <p>Brand 1</p>
             <p>Brand 2</p>
             <p>Brand 3</p>
@@ -844,13 +844,14 @@ window.addEventListener('scroll', function() {
 
 // Get the modal
 var modal = document.getElementById("brandModal");
+var modalGloves = document.getElementById("brandModalGloves");
 
 // Get the button that opens the modal
 var btn = document.querySelector(".show-brands");
-
+var btnGloves = document.querySelector(".show-brands-gloves");
 // Get the <span> element that closes the modal
 var span = document.querySelector(".close");
-
+var spanGloves = document.querySelector(".close-gloves");
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -865,6 +866,8 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+  } else if (event.target == modalGloves) {
+    modalGloves.style.display = "none";
   }
 }
 
