@@ -146,16 +146,17 @@
           <h2>Epidural Cathether </h2>
           <p>B-BRAUN</p>
         </div>
-         <div class="product">
+        
+        <div class="product">
           <img src="pnss.png" alt="Product">
           <div class="status">In Stock</div>
           <h2>PNSS 1L</h2>
           <p>ENDURE</p>
-           <p>BRAND 1</p>
-          <button class="show-brands-PNSS">Show Other Brands</button>
+          <p>BRAND 1</p>
+          <button class="show-brands-pnss">Show Other Brands</button>
         </div>
-
-         <div id="brandModalPNSS" class="modal">
+        
+        <div id="brandModalPNSS" class="modal">
           <div class="modal-content">
             <span class="close-pnss">&times;</span>
             <h2>Brands for PNSS</h2>
@@ -171,10 +172,10 @@
           <h2>D5LR 1L</h2>
           <p>ENDURE</p>
           <p>BRAND 1</p>
-          <button class="show-brands-D5LR">Show Other Brands</button>
+          <button class="show-brands-d5lr">Show Other Brands</button>
         </div>
-
-         <div id="brandModalD5LR" class="modal">
+        
+        <div id="brandModalD5LR" class="modal">
           <div class="modal-content">
             <span class="close-d5lr">&times;</span>
             <h2>Brands for D5LR</h2>
@@ -183,7 +184,6 @@
             <p>Brand 3</p>
           </div>
         </div>
-
         
         <div class="product">
           <img src="plrs.png" alt="Product">
@@ -191,10 +191,10 @@
           <h2>Plain LR 1L</h2>
           <p>ENDURE</p>
           <p>BRAND 1</p>
-          <button class="show-brands-Plain">Show Other Brands</button>
+          <button class="show-brands-plain">Show Other Brands</button>
         </div>
-
-          <div id="brandModalPLAIN" class="modal">
+        
+        <div id="brandModalPLAIN" class="modal">
           <div class="modal-content">
             <span class="close-plain">&times;</span>
             <h2>Brands for PLAIN LR</h2>
@@ -210,10 +210,10 @@
           <h2>Irrigation 1L</h2>
           <p>ENDURE</p>
           <p>BRAND 1</p>
-          <button class="show-brands-Irrigation">Show Other Brands</button>
+          <button class="show-brands-irrigation">Show Other Brands</button>
         </div>
-
-         <div id="brandModalIRRIGATION" class="modal">
+        
+        <div id="brandModalIRRIGATION" class="modal">
           <div class="modal-content">
             <span class="close-irrigation">&times;</span>
             <h2>Brands for IRRIGATION</h2>
@@ -222,12 +222,14 @@
             <p>Brand 3</p>
           </div>
         </div>
+        
         <div class="product">
           <img src="mannitol.png" alt="Product">
           <div class="status">In Stock</div>
           <h2>Mannitol 500ml</h2>
           <p>ENDURE</p>
         </div>
+        
         <div class="product">
           <img src="steryl.png" alt="Product">
           <div class="status">In Stock</div>
@@ -235,25 +237,25 @@
           <p>EUROMED</p>
         </div>
 
-        <div id="brandModalD52" class="modal">
-          <div class="modal-content">
-            <span class="close-d5w">&times;</span>
-            <h2>Brands for D5 Water</h2>
-            <p>Brand 1</p>
-            <p>Brand 2</p>
-            <p>Brand 3</p>
-          </div>
-        </div>
-        
-        <div class="product">
-          <img src="d5w.png" alt="Product">
-          <div class="status">In Stock</div>
-          <h2>D5 Water 1L</h2>
-          <p>ENDURE</p>
-          <p>BRAND 1</p>
-          <button class="show-brands-D5W">Show Other Brands</button>
+       <div id="brandModalD5W" class="modal">
+        <div class="modal-content">
+          <span class="close-d5w">&times;</span>
+          <h2>Brands for D5 Water</h2>
+          <p>Brand 1</p>
+          <p>Brand 2</p>
+          <p>Brand 3</p>
         </div>
       </div>
+        
+        <div class="product">
+        <img src="d5w.png" alt="Product">
+        <div class="status">In Stock</div>
+        <h2>D5 Water 1L</h2>
+        <p>ENDURE</p>
+        <p>BRAND 1</p>
+        <button class="show-brands-d5w">Show Other Brands</button>
+      </div>
+    </div>
 
       <div class="more-products" style="display: none;">
         <div class="product">
@@ -899,67 +901,71 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Get the modal 
-var modal = document.getElementById("brandModal");
-var modalGloves = document.getElementById("brandModalGloves");
+// Get all the modals
 var modalPNSS = document.getElementById("brandModalPNSS");
 var modalD5LR = document.getElementById("brandModalD5LR");
 var modalPlain = document.getElementById("brandModalPLAIN");
 var modalIrrigation = document.getElementById("brandModalIRRIGATION");    
 var modalD5W = document.getElementById("brandModalD5W");    
 
-// Get the button that opens the Iopamidol modal
-var btn = document.querySelector(".show-brands");
-var btnGloves = document.querySelector(".show-brands-gloves");
-var btnPNSS = document.querySelector(".show-brands-PNSS");
-var btnD5LR = document.querySelector(".show-brands-D5LR");
-var btnPlain = document.querySelector(".show-brands-Plain"); 
-var btnIrrigation = document.querySelector(".show-brands-Irrigation");
-var btnD5W = document.querySelector(".show-brands-D5W");      
+// Get all the buttons that open the modals
+var btnPNSS = document.querySelector(".show-brands-pnss");
+var btnD5LR = document.querySelector(".show-brands-d5lr");
+var btnPlain = document.querySelector(".show-brands-plain"); 
+var btnIrrigation = document.querySelector(".show-brands-irrigation");
+var btnD5W = document.querySelector(".show-brands-d5w");      
 
-// Get the <span> element that closes the Iopamidol modal
-var span = document.querySelector(".close");
-var spanGloves = document.querySelector(".close-gloves");
+// Get all the <span> elements that close the modals
 var spanPNSS = document.querySelector(".close-pnss");
 var spanD5LR = document.querySelector(".close-d5lr");
 var spanPlain = document.querySelector(".close-plain");
 var spanIrrigation = document.querySelector(".close-irrigation");
 var spanD5W = document.querySelector(".close-d5w");
 
-// When the user clicks the button, open the Iopamidol modal
-btn.onclick = function() {
-  modal.style.display = "block";
+// When the user clicks the button, open the corresponding modal
+btnPNSS.onclick = function() {
+  modalPNSS.style.display = "block";
+}
+btnD5LR.onclick = function() {
+  modalD5LR.style.display = "block";
+}
+btnPlain.onclick = function() {
+  modalPlain.style.display = "block";
+}
+btnIrrigation.onclick = function() {
+  modalIrrigation.style.display = "block";
+}
+btnD5W.onclick = function() {
+  modalD5W.style.display = "block";
 }
 
-// When the user clicks the button, open the Sterile Gloves modal
-btnGloves.onclick = function() {
-  modalGloves.style.display = "block";
+// When the user clicks on <span> (x), close the corresponding modal
+spanPNSS.onclick = function() {
+  modalPNSS.style.display = "none";
+}
+spanD5LR.onclick = function() {
+  modalD5LR.style.display = "none";
+}
+spanPlain.onclick = function() {
+  modalPlain.style.display = "none";
+}
+spanIrrigation.onclick = function() {
+  modalIrrigation.style.display = "none";
+}
+spanD5W.onclick = function() {
+  modalD5W.style.display = "none";
 }
 
-// When the user clicks on <span> (x), close the Iopamidol modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks on <span> (x), close the Sterile Gloves modal
-spanGloves.onclick = function() {
-  modalGloves.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the Iopamidol modal, close it
+// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  } else if (event.target == modalGloves) {
-    modalGloves.style.display = "none";
-  } else if (event.target == modalPNSS) {
+  if (event.target == modalPNSS) {
     modalPNSS.style.display = "none";
   } else if (event.target == modalD5LR) {
     modalD5LR.style.display = "none";
-  } else if (event.target == modalPLAIN) {
-    modalPLAIN.style.display = "none";
-  } else if (event.target == modalIRRIGATION) {
-    modalIRRIGATION.style.display = "none"; 
+  } else if (event.target == modalPlain) {
+    modalPlain.style.display = "none";
+  } else if (event.target == modalIrrigation) {
+    modalIrrigation.style.display = "none"; 
   } else if (event.target == modalD5W) {
     modalD5W.style.display = "none";  
   }
