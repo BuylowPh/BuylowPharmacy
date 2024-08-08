@@ -929,6 +929,13 @@ var spanIrrigation = document.querySelector(".close-irrigation");
 var spanD5W = document.querySelector(".close-d5w");
 
 // When the user clicks the button, open the corresponding modal
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+btnGloves.onclick = function() {
+  modalGloves.style.display = "block";
+}
 btnPNSS.onclick = function() {
   modalPNSS.style.display = "block";
 }
@@ -946,6 +953,13 @@ btnD5W.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the corresponding modal
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+spanGloves.onclick = function() {
+  modalGloves.style.display = "none";
+}
 spanPNSS.onclick = function() {
   modalPNSS.style.display = "none";
 }
