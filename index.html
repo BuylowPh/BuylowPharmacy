@@ -93,7 +93,17 @@
           <p>HEXACARE</p>
         </div>
 
-         <div id="brandModalGloves" class="modal">
+         <div class="product">
+          <img src="gloves.png" alt="Product">
+          <div class="status">In Stock</div>
+          <h2>Sterile Gloves</h2>
+          <p>HEXACARE</p>
+          <p>BRAND 1</p>
+          <button class="show-brands-gloves">Show Other Brands</button>
+        </div>
+
+<!-- Modal for Sterile Gloves -->
+        <div id="brandModalGloves" class="modal">
           <div class="modal-content">
             <span class="close-gloves">&times;</span>
             <h2>Brands for Sterile Gloves</h2>
@@ -102,15 +112,7 @@
             <p>Brand 3</p>
           </div>
         </div>
-        
-        <div class="product">
-          <img src="gloves.png" alt = "Product">
-          <div class="status">In Stock</div>
-          <h2>Sterile Gloves</h2>
-          <p>HEXACARE</p>
-          <p>BRAND 1</p>
-          <button class="show-brands">Show Other Brands</button>
-        </div>
+
         <div class="product">
           <img src="tissue.png" alt="Product">
           <div class="status">In Stock</div>
@@ -842,27 +844,42 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Get the modal
+// Get the modal for Iopamidol
 var modal = document.getElementById("brandModal");
+// Get the modal for Sterile Gloves
 var modalGloves = document.getElementById("brandModalGloves");
 
-// Get the button that opens the modal
+// Get the button that opens the Iopamidol modal
 var btn = document.querySelector(".show-brands");
+// Get the button that opens the Sterile Gloves modal
 var btnGloves = document.querySelector(".show-brands-gloves");
-// Get the <span> element that closes the modal
+
+// Get the <span> element that closes the Iopamidol modal
 var span = document.querySelector(".close");
+// Get the <span> element that closes the Sterile Gloves modal
 var spanGloves = document.querySelector(".close-gloves");
-// When the user clicks the button, open the modal 
+
+// When the user clicks the button, open the Iopamidol modal
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// When the user clicks the button, open the Sterile Gloves modal
+btnGloves.onclick = function() {
+  modalGloves.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the Iopamidol modal
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks on <span> (x), close the Sterile Gloves modal
+spanGloves.onclick = function() {
+  modalGloves.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the Iopamidol modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -870,7 +887,7 @@ window.onclick = function(event) {
     modalGloves.style.display = "none";
   }
 }
-
+    
 function searchFunction() {
     const searchValue = document.getElementById('searchInput').value.toLowerCase();
     const products = document.querySelectorAll('.product');
