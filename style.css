@@ -173,9 +173,9 @@ body {
 .back-to-top {
   position: sticky;
   bottom: 20px;
-  right: 20px;
+  right: 30px;
   display: none;
-  background-color: #030303;
+  background-color: #888;
   color: white;
   border: none;
   border-radius: 30%;
