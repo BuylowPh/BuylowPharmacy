@@ -163,12 +163,14 @@ body {
 }
 .footer .footer-content .contact-item {
   margin: 0px 0;
-  font-size: 1.0em;
+  font-size: 1.1em;
   gap: -50px;
   font-weight: bold;
 }
 
 .footer .footer-content .slogan {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
   font-size: 1.5em;
   font-weight: bold;
 }
