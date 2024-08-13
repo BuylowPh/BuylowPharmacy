@@ -44,6 +44,8 @@ body {
 
 .main {
   padding: 20px;
+  margin: 0;
+  background-color: #F9F6EE;
 }
 
 .section {
