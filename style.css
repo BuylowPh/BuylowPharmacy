@@ -222,8 +222,7 @@ body {
   text-align: center;
 }
 
-/* Base styles for all close buttons */
-.modal .close {
+.close {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -231,19 +230,62 @@ body {
   cursor: pointer;
 }
 
-.modal .close:hover,
-.modal .close:focus {
+.close:hover,
+.close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* Optional: Ensure consistent positioning for close buttons */
-.modal .close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
+/* Specific styles for Sterile Gloves modal close button */
+.close-gloves {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
 }
+
+.close-pnss {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-d5lr {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-plain {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-irrigation {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-d5w {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 
 .header input[type="text"] {
   padding: 5px;
