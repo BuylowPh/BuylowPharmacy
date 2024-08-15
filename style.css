@@ -222,55 +222,27 @@ body {
   text-align: center;
 }
 
-.close {
+/* Base styles for all close buttons */
+.modal .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.close-gloves {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close-pnss {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close-d5lr {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close-plain {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close-irrigation {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close-d5w {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
+.modal .close:hover,
+.modal .close:focus {
+  color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Optional: Ensure consistent positioning for close buttons */
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
 }
 
 .header input[type="text"] {
