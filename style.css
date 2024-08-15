@@ -140,6 +140,8 @@ body {
   background-color: #6082B6;
   color: white;
   display: flex;
+  padding: 5px;
+  margin-bottom: -25px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
