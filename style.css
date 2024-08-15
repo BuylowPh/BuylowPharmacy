@@ -139,8 +139,6 @@ body {
 .footer {
   background-color: #6082B6;
   color: white;
-  margin-top: 5px;
-  padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
