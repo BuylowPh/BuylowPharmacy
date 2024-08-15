@@ -149,6 +149,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
+  margin: -10px;
 }
 
 .footer .footer-content {
