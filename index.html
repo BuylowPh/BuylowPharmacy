@@ -879,13 +879,8 @@ var btnIrrigation = document.querySelector(".show-brands-irrigation");
 var btnD5W = document.querySelector(".show-brands-d5w");      
 
 // Get all the <span> elements that close the modals
-var span = document.querySelector(".close");
-var spanGloves = document.querySelector(".close-gloves");    
-var spanPNSS = document.querySelector(".close-pnss");
-var spanD5LR = document.querySelector(".close-d5lr");
-var spanPlain = document.querySelector(".close-plain");
-var spanIrrigation = document.querySelector(".close-irrigation");
-var spanD5W = document.querySelector(".close-d5w");
+var span = document.querySelectorAll(".close");
+
 
 // When the user clicks the button, open the corresponding modal
 
@@ -911,48 +906,14 @@ btnD5W.onclick = function() {
   modalD5W.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the corresponding modal
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-spanGloves.onclick = function() {
-  modalGloves.style.display = "none";
-}
-spanPNSS.onclick = function() {
-  modalPNSS.style.display = "none";
-}
-spanD5LR.onclick = function() {
-  modalD5LR.style.display = "none";
-}
-spanPlain.onclick = function() {
-  modalPlain.style.display = "none";
-}
-spanIrrigation.onclick = function() {
-  modalIrrigation.style.display = "none";
-}
-spanD5W.onclick = function() {
-  modalD5W.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+// Add event listeners to each close button to close the corresponding modal
+closeButtons.forEach(function(span) {
+  span.onclick = function() {
+    // Get the parent modal of the close button
+    var modal = btn.closest(".modal");
     modal.style.display = "none";
-  } else if (event.target == modalGloves) {
-    modalGloves.style.display = "none";
-  } else if (event.target == modalPNSS) {
-    modalPNSS.style.display = "none";
-  } else if (event.target == modalD5LR) {
-    modalD5LR.style.display = "none";
-  } else if (event.target == modalPlain) {
-    modalPlain.style.display = "none";
-  } else if (event.target == modalIrrigation) {
-    modalIrrigation.style.display = "none"; 
-  } else if (event.target == modalD5W) {
-    modalD5W.style.display = "none";  
-  }
-}
+  };
+});
     
 function searchFunction() {
     const searchValue = document.getElementById('searchInput').value.toLowerCase();
